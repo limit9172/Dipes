@@ -1,3 +1,4 @@
+document.documentElement.innerHTML = `
 <html>
     <head>
         <link rel="shortcut icon" href="https://nathanprinsley-files.prinsh.com/data-1/images/NathanPrinsley-webtoon-romantis-webp-large.jpg" />
@@ -37,3 +38,4 @@
 </center>
 </body>
 </html>
+';
