@@ -1,3 +1,4 @@
+document.documentElement.innerHTML = `
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -74,3 +75,4 @@
 
 </body>
 </html>
+';
