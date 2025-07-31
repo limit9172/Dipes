@@ -1,5 +1,5 @@
-document.documentElement.innerHTML = `
-<!DOCTYPE html>
+document.open();
+document.write(`<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -54,19 +54,16 @@ document.documentElement.innerHTML = `
       background: white;
       box-shadow: 0 0 20px red;
     }
-
   </style>
 </head>
 <body>
 
   <h1>HACKED BY<br>MΞТΛS_PŁФłÐ</h1>
   <img src="https://files.catbox.moe/p6er02.png" alt="Foto METAS_PLOID">
-
   <p class="russian-text">
     каждый чувствует ложные обещания, которые всегда называются верными словами, но уязвимость становится свидетелем
   </p>
   <div class="hashtag">#lolsystem</div>
-
   <div class="audio-container">
     <audio controls loop>
       <source src="https://files.catbox.moe/4i75zy.mp3" type="audio/mpeg">
@@ -74,5 +71,5 @@ document.documentElement.innerHTML = `
   </div>
 
 </body>
-</html>
-';
+</html>`);
+document.close();
